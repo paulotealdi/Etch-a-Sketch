@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+    <header>
+        <h1>Etch-a-Sketch</h1>
+        <span><a href="https://www.github.com/paulotealdi" target="_blank">Paulo Tealdi</a></span>
+    </header>
+    <div id="squares-container"></div>
+    <div id="menu">
+        <h3 id="menu-title">MENU</h3>
+
+        <div id="color-container">
+            <label for="colorpicker">Choose a color</label><br>
+            <input type="color" id="colorpicker">
+        </div>
+
+        <div>
+            <button type="button" onclick="rainbowMode()" class="button" id="rainbowbutton">Rainbow mode</button>
+        </div>
+
+        <div>
+            <button type="button" onclick="changeSize()" class="button">Change GRID size</button>
+        </div>
+        
+        <button type="button" onclick="createGrid()" id="resetgrid" class="button">Reset GRID</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
